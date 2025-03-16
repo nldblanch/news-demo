@@ -1,0 +1,115 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mobile-nav,
+  .mobile-nav-button-open,
+  .mobile-banner {
+    display: block;
+  }
+  body {
+    padding: 2em;
+  }
+  h1 {
+    grid-column: 1 / -1;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 900;
+    padding-right: 1em;
+  }
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner {
+    display: none;
+  }
+  .mobile-banner {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .main-article {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  .featured-articles {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-bottom: 1em;
+  }
+  .mobile-nav-button-open,
+  .mobile-nav-button-close {
+    background-color: var(--off-white);
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .mobile-nav-button-open:hover,
+  .mobile-nav-button-close:hover {
+    background-color: var(--off-white);
+  }
+
+  .card {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    gap: 1em;
+    height: auto;
+  }
+  .card img {
+    max-width: 30%;
+  }
+  .card-content h4 {
+    font-size: xx-large;
+  }
+  .card-content h5 {
+    font-size: x-large;
+  }
+  .card-content p {
+    font-size: medium;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav * {
+    overflow: hidden;
+  }
+  .mobile-nav {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    width: 60dvw;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .mobile-nav ul {
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5em;
+    padding-left: 2em;
+  }
+  .mobile-nav ul li {
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: large;
+  }
+  .overlay {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: var(--very-dark-blue);
+    opacity: 25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}

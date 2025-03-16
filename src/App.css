@@ -1,0 +1,171 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--off-white);
+}
+
+body {
+  padding: 3em 7em;
+}
+
+header {
+  min-height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+}
+
+li {
+  padding: 0.5em;
+  color: var(--dark-grayish-blue);
+}
+
+li:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2em;
+}
+button {
+  padding: 1em 2em;
+  border: none;
+  margin-top: 2em;
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button:hover {
+  cursor: pointer;
+  color: var(--off-white);
+  background-color: var(--very-dark-blue);
+}
+h1 {
+  grid-column: 1 / span 4;
+  font-size: 2.5em;
+  line-height: 1;
+  font-weight: 900;
+  padding-right: 1em;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  grid-column: 1 / span 8;
+}
+
+.main-article {
+  grid-column: 5 / span 4;
+}
+.featured-articles {
+  grid-column: 9 / span 4;
+  grid-row: 1 / span 2;
+  background-color: var(--very-dark-blue);
+  padding: 1em;
+  padding-bottom: 0;
+}
+.mobile-nav,
+.mobile-nav-button-open,
+.mobile-banner {
+  display: none;
+}
+
+h2 {
+  color: var(--soft-orange);
+  font-size: xx-large;
+}
+h3 {
+  color: var(--off-white);
+  font-size: large;
+}
+h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+hgroup p {
+  color: var(--grayish-blue);
+  font-size: small;
+  line-height: 2;
+}
+hgroup {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  padding: 1em 0 2em 0;
+}
+
+hgroup:last-of-type {
+  border-bottom: none;
+}
+.card {
+  grid-column: auto / span 4;
+  display: flex;
+  gap: 1em;
+  height: 125px;
+  margin-top: 2em;
+}
+.card img {
+  height: 100%;
+  max-width: 40%;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25em;
+}
+
+.card h4 {
+  font-weight: 800;
+  font-size: x-large;
+  color: var(--soft-red);
+}
+.card h5 {
+  font-weight: 900;
+  font-size: medium;
+}
+.card h5:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
+.card p {
+  color: var(--dark-grayish-blue);
+  font-size: small;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
