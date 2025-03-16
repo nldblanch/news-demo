@@ -1,12 +1,13 @@
 import logo from "./assets/logo.svg";
-import banner from "./assets/image-web-3-desktop.jpg";
-import mobile_banner from "./assets/image-web-3-mobile.jpg";
+
 import nav_button from "./assets/icon-menu.svg";
 import nav_close_button from "./assets/icon-menu-close.svg";
 import "./App.css";
 import "./Mobile.css";
 import CardStack from "./components/CardStack";
 import { useState } from "react";
+import Banner from "./components/Banner";
+import Featured from "./components/Featured";
 
 function NavLink({ name }: { name: string }) {
   return <li>{name}</li>;
@@ -58,19 +59,6 @@ function DesktopNav() {
   );
 }
 
-function Banner() {
-  return (
-    <>
-      <div className="banner">
-        <img src={banner} />
-      </div>
-      <div className="mobile-banner">
-        <img src={mobile_banner} />
-      </div>
-    </>
-  );
-}
-
 function App() {
   return (
     <>
@@ -91,27 +79,7 @@ function App() {
           </p>
           <button>Read more</button>
         </section>
-        <section className="featured-articles">
-          <h2>New</h2>
-          <hgroup>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </hgroup>
-          <hgroup>
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </hgroup>
-          <hgroup>
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </hgroup>
-        </section>
+        <Featured />
         <CardStack />
       </main>
     </>

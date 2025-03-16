@@ -5,8 +5,12 @@
   .mobile-banner {
     display: block;
   }
+  main {
+    grid-template-columns: repeat(6, 1fr);
+
+  }
   body {
-    padding: 2em;
+    padding: 1em;
   }
   h1 {
     grid-column: 1 / -1;
